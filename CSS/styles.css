@@ -20,13 +20,18 @@ body{
     box-shadow: 1px 1px 10px 1px rgba(81, 81, 81, 0.637),
                 1px 1px 10px 1px rgba(81, 81, 81, 0.637),
                 1px 0.5px 20px 1px rgba(81, 81, 81, 0.637),
-                1px 1px 5px 0px rgba(81, 81, 81, 0.637);
+                1px 1px 5px 0px rgba(81, 81, 81, 0.637
+    );
+    position: sticky;
+    top: 0;
+    inset: 0 0 0 0;
+    
 }
 .hero{
     height: 100vh;
     color: white;
 }
-.hero > div{
+.hero {
     background-color: rgba(77, 181, 77, 0.66);
 }
 .logo{
