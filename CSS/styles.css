@@ -4,11 +4,7 @@
     padding: 0;
 }
 body{
-    background-image: linear-gradient(to bottom, 
-  rgb(155, 204, 220) 0%,     /* sky blue */
-  rgb(97, 171, 97) 50%,     /* soft green */
-  rgb(220, 231, 153) 100%     /* light yellow */
-);
+    
 }
 .nav-bg{
     background: linear-gradient(to bottom, 
