@@ -49,24 +49,27 @@ body{
 }
 .but{
     padding: 8px 12px;
-    border: 2px solid rgba(144, 238, 144);
+    border: 3px solid rgba(126, 236, 126);
     transition: all 0.3s;
     font-weight: 600;
     color: hsla(60, 100%, 90%) ;
+    max-width: 300px;
+
 }
 .but:nth-of-type(1){
-    background-color: rgba(144, 238, 144);
+    background-color: rgb(126, 236, 126);
     color: white;
+    border: 3px solid rgb(126, 236, 126);
+    padding-bottom: 2px;
 }
 .but:nth-of-type(1):hover{
-    border: 2px solid rgba(144, 238, 144);
+    border: 3px solid rgba(126, 236, 126);
     background-color: transparent;
 }
 
 .but:nth-of-type(2):hover{
-    background-color: rgba(144, 238, 144);
+    background-color: rgba(126, 236, 126);
     color: white;
-    font-weight: 600;
 }
 
 .logo{

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+<body>
+    <header id="header" class="mb-5"></header>
+    <div class="container-sm">
+           <div class="input-group mb-3">
+             <samp class="input-group-text" ><i class="bi bi-person-circle"></i></samp>
+             <input type="text" placeholder="e.g Eloghosa Nosakhare" class="form-control">
+             <samp class="input-group-text" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Enter a name we can easily identify"><i class="bi bi-patch-question"></i></samp>
+           </div>
+
+    </div>
+
+
+    <script src="./JS/index.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  </script>
+</body>
+</html>
