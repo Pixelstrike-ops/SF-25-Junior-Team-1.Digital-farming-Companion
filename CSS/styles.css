@@ -4,17 +4,14 @@
     padding: 0;
 }
 body{
-    background-image: linear-gradient(to bottom, 
-  rgb(155, 204, 220) 0%,     /* sky blue */
-  rgb(97, 171, 97) 50%,     /* soft green */
-  rgb(220, 231, 153) 100%     /* light yellow */
-);
+
 }
+
 .nav-bg{
     background: linear-gradient(to bottom, 
     rgb(173, 216, 230) 0%,     /* sky blue */
     rgb(144, 238, 144) 50%,     /* soft green */
-    rgb(255, 255, 204) 100%     /* light yellow */
+    hsl(60, 100%, 90%) 100%     /* light yellow */
     );
     color: white;
     box-shadow: 1px 1px 10px 1px rgba(81, 81, 81, 0.637),
@@ -22,18 +19,59 @@ body{
                 1px 0.5px 20px 1px rgba(81, 81, 81, 0.637),
                 1px 1px 5px 0px rgba(81, 81, 81, 0.637
     );
-    position: sticky;
-    top: 0;
-    inset: 0 0 0 0;
+
+    
     
 }
-.hero{
-    height: 100vh;
-    color: white;
+#header{
+    position: sticky;
+    top: 1px;
+    z-index: 100;
 }
+
 .hero {
     background-color: rgba(77, 181, 77, 0.66);
+    background-image: url(../src/IMG/home-page.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
 }
+.hero > div{
+    background-image: 
+        linear-gradient(150deg, 
+        rgb(173, 216, 230),     /* sky blue */
+        rgba(144, 238, 144, 0.661),     /* soft green */
+        hsla(60, 100%, 90%, 0.622)    /* light yellow */
+    );
+    height: 100%;
+    width: 100%;
+
+}
+.but{
+    padding: 8px 12px;
+    border: 3px solid rgba(126, 236, 126);
+    transition: all 0.3s;
+    font-weight: 600;
+    color: hsla(60, 100%, 90%) ;
+    max-width: 300px;
+
+}
+.but:nth-of-type(1){
+    background-color: rgb(126, 236, 126);
+    color: white;
+    border: 3px solid rgb(126, 236, 126);
+    padding-bottom: 2px;
+}
+.but:nth-of-type(1):hover{
+    border: 3px solid rgba(126, 236, 126);
+    background-color: transparent;
+}
+
+.but:nth-of-type(2):hover{
+    background-color: rgba(126, 236, 126);
+    color: white;
+}
+
 .logo{
     max-width: 150px;
     height: 50px;
