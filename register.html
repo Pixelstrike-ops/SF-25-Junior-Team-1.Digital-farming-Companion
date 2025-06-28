@@ -6,17 +6,50 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" >
     <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="./CSS/register.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <header id="header" class="mb-5"></header>
-    <div class="container-sm">
+  <header id="header" class="mb-5"></header>
+  <div class="justify-content-center container-fluid row f-container">
+    <div class="row col-12 col-md-10 col-lg-6 rounded border col-sm-10 justify-content-center justify-items-center bg-light p-2">
+      <form action="./DashBoard/dashboard.html" >
+        <legend class="text-center fw-bolder h2 text-warning">Welcome to Agrikids</legend>
+        <div class="row justify-content-center col-12 mb-2">
+          <div class="col-12 col-md-6 col-lg-6">
+            <label for="Fname" >First Name</label>
+            <input type="text" name="fname" class="form-control" required>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6">
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" required class="form-control">
+          </div>
+        </div>
+        <div class="row justify-content-center col-12 ">
+          <div class="col-12">
+            <label for="email">Email</label>
+            <input type="email" name="email" class="form-control" required>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-12 col-md-10 col-lg-6 rounded col-sm-10 justify-content-center justify-items-center h-100 d-none d-lg-block">
+      <img src="./src/IMG/home-hero.png" alt="hero image" class="img-fluid img">
+    </div>
+  </div>
+
+
+
+
+
+    <!-- <div class="container-sm">
            <div class="input-group mb-3">
              <samp class="input-group-text" ><i class="bi bi-person-circle"></i></samp>
              <input type="text" placeholder="e.g Eloghosa Nosakhare" class="form-control">
              <samp class="input-group-text" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Enter a name we can easily identify"><i class="bi bi-patch-question"></i></samp>
            </div>
 
-    </div>
+    </div> -->
 
 
     <script src="./JS/index.js"></script>
