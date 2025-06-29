@@ -6,6 +6,22 @@
     <title>AgriKids Adventures</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/styles.css">
+
+
+    <style>
+        .object{
+            object-fit: contain;
+        }
+        .object > iframe{
+            width: 50vw;
+            max-width: 700px;
+            min-width: 200px;
+            height: 30vw;
+            max-height: 250px;
+            min-height: 150px;
+            
+        }
+    </style>
 </head>
 <body>
     <header id="header"></header>
@@ -62,10 +78,15 @@
     <section">
         <h1 class="text-warning">Videos</h1>
         <p>Watch why Agriculture is Important</p>
-        <video width="640" height="360" controls autoplay muted loop poster="OVP.jpg">
-            <source src="https://youtu.be/wMpActikszo" type="youtu/be">
+        <div class="container-fluid justify-content-center text-center pb-2 object">
+            <iframe src="https://www.youtube.com/embed/wMpActikszo?si=vVSZHyKVurKJlbE0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+
+        <!-- <video width="640" height="360" controls autoplay loop poster="OVP.jpg">
+            
             Your browser does not support the video tag.
-          </video>
+          </video> -->
     </section>
      
     
