@@ -7,119 +7,194 @@
     <link rel="icon" href="src/IMG/logo.png" type="image/png">
     <link rel="stylesheet" href="./CSS/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body {
+        background-image: url('');
+      }
+
+      #intro {
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('src/IMG/image.png') no-repeat center center/cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        color: white;
+        font-size: 3rem;
+        transition: opacity 1s ease;
+      }
+
+
+      #intro.hidden {
+        opacity: 0;
+        pointer-events: none;
+      }
+
+
+      .container {
+        width: 1000px;
+        border-radius: 15px;
+        padding-top: 30px;
+        padding-right: 40px;
+        padding-bottom: 30px;
+        padding-left: 40px;
+        gap: 10px;
+        opacity: 0;
+        transition: .5s linear;
+        padding: 50px;
+        text-align: center;
+      }
+
+      .container:hover {
+        width: 1200px;
+      }
+
+      .container.show {
+        opacity: 1;
+      }
+
+      .border-box {
+        width: 100%;
+        border-radius: 15px;
+        padding-top: 30px;
+        padding-right: 40px;
+        padding-bottom: 30px;
+        padding-left: 40px;
+      }
+
+      a.btn {
+        width: 100%;
+      }
+
+      @media screen and (max-width: 100%) and (min-width: 100%) {
+        .container {
+          border: none;
+        }
+      }
+    </style>
 </head>
 <body>
-    <header id="header"></header>
-    <section>
-    <h1 class="fw-bolder text-center">How plants grow - From seed to life</h1>
-    <section id="How plants grow" class="HPG container-fluid text-center my-5">
-    <div id="carouselExampleIndicators" class="carousel slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-            <h5 class="text-center fw-bold">Growth in plants is not just a natural process — it’s a scientific journey. 
-            <br>
-            Let’s explore it step by step in a way that’s easy to understand, yet rich in detail.</h5>
 
-            <br>
-            <br>
-            <br>
-                <div class="container-lg">
-            <h3> 1. Germination - The Beginning of Life</h3>
-            <p class="fw-bolder">The process begins with a seed. But not just any seed — a living capsule
-            <br>
-            containing the blueprint for a whole plant.
-            <br>
-            When the seed is exposed to the right conditions — moisture, warmth, and oxygen — it starts to germinate.
+  <header id="header"></header>
+
+  
+  <!-- Intro Screen -->
+  <div id="intro" >
+    <p class="fw-bold">Welcome To AgriKids</p>
+  </div>
+
+
+
+
+  <section class="container my-5 shadow-lg col-12 col-sm-6 col-md-4" id="container">
+    <h1 class="fw-bolder text-center">How plants grow - From seed to life</h1>
+    <p class="text-center fw-bold">Growth in plants is not just a natural process — it’s a scientific journey. 
+    <br>
+    Let’s explore it step by step in a way that’s easy to understand, yet rich in detail.</p>
+    <div class="border-box shadow-lg my-4">
+      <div class="border-item">
+        <h5>Germination - The Beginning of Life</h5>
+        <p class="fw-bolder">The process begins with a seed. But not just any seed — a living capsule containing the blueprint 
+              <br>
+              for a whole plant. When the seed is exposed to the right conditions — moisture, warmth, and oxygen — it
+              <br>
+              starts to germinate.
             
-            <ul class="text-center">
+            <ul>
                 <li class="fw-bolder">The seed coat softens and splits open.</li>
                 <li class="fw-bolder">A tiny root (called the radicle) grows downward into the soil to absorb water and nutrients.</li>
                 <li class="fw-bolder"> A shoot (the plumule) begins to grow upward, seeking light.</li>
             </ul>
             
             <p class="fw-bold">This marks the start of the plant’s life.</p>
-
-        </p>
-        </div>
+        <a href="#" class="btn btn-secondary text-center">View images</a>
+      </div>
     </div>
-    <div class="carousel-item">
-      <div class="container-lg">
-            <h3> 2. The Seedling Stage – Gaining Strength</h3>
-            <p class="fw-bolder">As the shoot breaks through the surface, the plant becomes a seedling.
+
+    <div class="border-box shadow-lg my-4">
+      <div class="border-item ">
+        <h5>The Seedling Stage - Gaining Strength</h5>
+        <p class="fw-bolder">As the shoot breaks through the surface, the plant becomes a seedling.
             <ul class="fw-bolder">
                 <li>
                     Leaves begin to form and unfold.
-            </li>
-        </ul>
-             <ul class="fw-bolder">
+                </li>
+            </ul>
+            <ul class="fw-bolder">
                 <li>
                     The plant now starts photosynthesis — the process where it uses sunlight, water, and carbon dioxide to make its own food.
-            </li>
-        </ul>
-        <ul class="fw-bolder">
+                </li>
+            </ul>
+            <ul class="fw-bolder">
                 <li>
                     Chlorophyll, the green pigment in leaves, captures sunlight and powers this food-making process.
-            </li>
-        </ul>
-        <p class="fw-bolder">Photosynthesis =
-            <br>
-                <h5 class="fw-bold">Carbon dioxide + Water + Sunlight → Glucose (food) + Oxygen</h5>
+                </li>
+            </ul>
+            <p class="fw-bolder">Photosynthesis =
+                <br>
+                    <h5>Carbon dioxide + Water + Sunlight → Glucose (food) + Oxygen</h5>
 
-                This stage is critical for survival. Without sunlight or water, the seedling can wither.</p>
-        </p>
-        </div>
-
+                    <p class="fw-bold">This stage is critical for survival. Without sunlight or water, the seedling can wither.</p>
+                  </p>
+            </p>
+            <a href="#" class="btn btn-secondary text-center">View images</a>
+      </div>
     </div>
-    <div class="carousel-item">
-      <div class="container-lg">
-        <h3> 3. Vegetative Growth – Reaching Maturity</h3>
-            <p class="fw-bolder">As photosynthesis continues, the plant grows taller, stronger, and more structured.
-            
+
+    <div class="border-box shadow-lg my-4">
+      <div class="border-item">
+        <h5>Vegetation Growth - Reaching Matuarity</h5>
+        <p class="fw-bolder">As photosynthesis continues, the plant grows taller, stronger, and more structured.
+            </p>
             <ul>
                 <li class="fw-bolder">Roots grow deeper.</li>
                 <li class="fw-bolder">Stems thicken.</li>
                 <li class="fw-bolder">Leaves multiply.</li>
             </ul>
             
-            <p class="fw-bold">The plant now focuses on <span class="fw-bold">growing mass and storing energy,</span> preparing for the next stage: reproduction.</p>
-            </div>
+            <p class="fw-bold">The plant now focuses on growing mass and storing energy, preparing for the next stage: reproduction.</p>
+            <a href="#" class="btn btn-secondary text-center">View images</a>
+      </div>
     </div>
-    <div class="carousel-item">
-      <h3 class="fw-bold"> 5. Seed Dispersal and the Cycle Continues</h3>
-      <p>The plant releases its seeds through various methods — wind, animals, water, or bursting pods.Each seed carries the potential to start the life cycle again, under the right conditions.</p>
-    </div>
-  </div>
-  <div class="carousel-item">
-    <div class="container-lg">
-            <h3>4. Reproduction – Flowers, Fruits, and Seeds</h3>
-            <p class="fw-bold">Once mature, the plant develops flowers, which contain reproductive organs.</p>
+    
+    <div class="border-box shadow-lg">
+      <div class="border-item">
+        <h5>Reproduction - Flowers, Fruit, and Seeds</h5>
+        <p class="fw-bold">Once mature, the plant develops flowers, which contain reproductive organs.</p>
             <ul>
-                <li>Through <span class="fw-bold">pollination</span> (by wind, insects, or animals), pollen is transferred.</li>
-                <li>This leads to <span class="fw-bold">fertilization</span> and the development of <span class="fw-bold">fruits</span> and <span class="fw-bold">seeds.</span></li>
-                <li>The seeds contain new genetic material, ready to repeat the cycle.</li>
+                <li class="fw-bold">Through pollination (by wind, insects, or animals), pollen is transferred.</li>
+                <li class="fw-bold">This leads to fertilization and the development of fruits and seeds.
+                </li>
+                <li class="fw-bold">The seeds contain new genetic material, ready to repeat the cycle.</li>
             </ul>
-            </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</section>
-</section>
+            <a href="#" class="btn btn-secondary text-center">View images</a>
+      </div>
+    </div>
+
+    <div class="border-box shadow-lg my-4">
+      <div class="border-item">
+        <h5>Seed Dispersal and the Cycle Continues</h5>
+        <p class="fw-bold">The plant releases its seeds through various methods — wind, animals, water, or bursting pods.Each seed carries the potential to start the life cycle again, under the right conditions.</p>
+        <a href="#" class="btn btn-secondary text-center">View images</a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      document.getElementById("intro").classList.add("hidden");
+      document.getElementById("container").classList.add("show");
+    }, 1000);
+  });
+  </script>
+
     
 
-    <script src="./JS/index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./JS/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
