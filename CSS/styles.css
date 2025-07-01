@@ -143,3 +143,46 @@
     border-radius: 50%;
     z-index: 1;
 }
+
+a.activea {
+    color: red;
+    text-decoration: none;
+}
+    
+.circle-card-background{
+    background-color: rgb(144, 238, 144);
+    box-shadow: 1px 1px 10px 1px rgba(81, 81, 81, 0.637),
+                1px 1px 10px 1px rgba(81, 81, 81, 0.637),
+                1px 0.5px 20px 1px rgba(81, 81, 81, 0.637),
+                1px 1px 5px 0px rgba(81, 81, 81, 0.637
+    );
+}
+.circle-card-background p{
+    font-size: 1.1rem;
+    font-weight: 350;
+    color: black;
+}
+.circle-card-background .arrow{
+    font-size: 1.2rem;
+    color: white;
+}
+
+
+.row.justify-content-center {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.circle-card-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%; 
+    min-height: 320px;      
+}
+.circle-card-background p {
+    margin: 0;             
+    flex-grow: 1;          
+    text-align: center;   
+ }
