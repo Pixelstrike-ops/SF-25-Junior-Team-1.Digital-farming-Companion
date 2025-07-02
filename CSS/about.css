@@ -1,0 +1,20 @@
+.object{
+    object-fit: contain;
+}
+.object > iframe{
+    width: 50vw;
+    max-width: 700px;
+    min-width: 200px;
+    height: 30vw;
+    max-height: 250px;
+    min-height: 150px;
+    
+}
+
+.hero-container{
+    background: linear-gradient(to bottom, 
+    rgb(173, 216, 230) 0%,     /* sky blue */
+    rgb(144, 238, 144) 50%,     /* soft green */
+    hsl(60, 100%, 90%) 100%     /* light yellow */
+    );
+}
