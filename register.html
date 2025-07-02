@@ -28,9 +28,32 @@
         <div class="row justify-content-center col-12 ">
           <div class="col-12">
             <label for="email">Email</label>
-            <input type="email" name="email" class="form-control" required>
+            <input type="email" name="email" class="form-control" placeholder="Parent's Email" required>
           </div>
         </div>
+        <div class="row justify-content-center col-12 mt-2 mb-2">
+          <div class="col-12 col-md-6 col-lg-6">
+            <label for="password">Password</label>
+            <input type="password" name="password" class="form-control" placeholder="Enter a password" required>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6"> 
+            <label for="cpassword">Confirm Password</label>
+            <input type="password" name="cpassword" class="form-control" placeholder="Confirm your password" required>
+          </div>
+        </div>
+        <div class="row col-12 mt-2 mb-2 justify-content-center">
+          <div class="col-12 col-md-6 col-lg-6">
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" class="form-control" required>
+          </div>
+        </div>
+        <div class="rowcol-12">
+          <div class="col-12 col-md-6 col-lg-6">
+            <input type="checkbox" id="permit" required class="form-check-input">
+            <label for="permit">I have permission to sign up</label>
+          </div>
+        </div>
+        <button type="submit" onclick="submit()" class="btn btn-warning form-control text-white fw-bold p-2 mb-2">Register</button>
       </form>
     </div>
     <div class="col-12 col-md-10 col-lg-6 rounded col-sm-10 justify-content-center justify-items-center h-100 d-none d-lg-block">
@@ -58,5 +81,6 @@
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
   </script>
+  <script src="register.js"></script>
 </body>
 </html>
