@@ -11,53 +11,64 @@
 </head>
 <body>
   <header id="header" class="mb-5"></header>
-  <div class="justify-content-center container-fluid row f-container">
-    <div class="row col-12 col-md-10 col-lg-6 rounded border col-sm-10 justify-content-center justify-items-center bg-light p-2">
-      <form>
-        <legend class="text-center fw-bolder h2 text-warning">Welcome to Agrikids</legend>
-        <div class="row justify-content-center col-12 mb-2">
-          <div class="col-12 col-md-6 col-lg-6">
-            <label for="Fname" >First Name</label>
-            <input type="text" name="fname" class="form-control"  id="fname" placeholder="First Name">
-          </div>
-          <div class="col-12 col-md-6 col-lg-6">
-            <label for="lname">Last Name</label>
-            <input type="text" name="lname" class="form-control" placeholder="Last Name" id="lname">
-          </div>
-        </div>
-        <div class="row justify-content-center col-12 ">
-          <div class="col-12">
-            <label for="email">Email</label>
-            <input type="email" name="email" class="form-control" placeholder="Parent's Email" id="email">
-          </div>
-        </div>
-        <div class="row justify-content-center col-12 mt-2 mb-2">
-          <div class="col-12 col-md-6 col-lg-6">
-            <label for="password">Password</label>
-            <input type="password" name="password" class="form-control" placeholder="Enter a password" id="password">
-          </div>
-          <div class="col-12 col-md-6 col-lg-6"> 
-            <label for="cpassword">Confirm Password</label>
-            <input type="password" name="cpassword" class="form-control" placeholder="Confirm your password" id="cpassword">
-          </div>
-        </div>
-        <div class="row col-12 mt-2 mb-2 justify-content-center">
-          <div class="col-12 col-md-6 col-lg-6">
-            <label for="dob">Date of Birth</label>
-            <input type="date" name="dob" class="form-control" id="dob">
-          </div>
-        </div>
-        <div class="rowcol-12">
-          <div class="col-12 col-md-6 col-lg-6">
-            <input type="checkbox" id="permit"  class="form-check-input">
-            <label for="permit">I have permission to sign up</label>
-          </div>
-        </div>
-        <button type="submit" class="btn btn-warning form-control text-white fw-bold p-2 mb-2">Register</button>
-      </form>
+  <div class="justify-content-center container-lg p-3">
+    <div class="container-md text-center">
+      <h2 class="text-success display-5 fw-bold">Ready to start your Farm Journey Let's Create an account</h2>
     </div>
-    <div class="col-12 col-md-10 col-lg-6 rounded col-sm-10 justify-content-center justify-items-center h-100 d-none d-lg-block">
-      <img src="./src/IMG/home-hero.png" alt="hero image" class="img-fluid img">
+    <div class="row rounded align-items-stretch justify-content-center" >
+
+      <div class="col-lg-6 bg-light col-md-8 col-sm-9 rounded form-container h-100" >
+        <form class="pt-2" id="register-form">
+          <div class="row justify-content-center col-12 mb-2">
+            <div class="col-12 col-md-6 col-lg-6">
+              <label for="Fname" >First Name</label>
+              <input type="text" name="fname" class="form-control"  id="fname" placeholder="First Name">
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+              <label for="lname">Last Name</label>
+              <input type="text" name="lname" class="form-control" placeholder="Last Name" id="lname">
+            </div>
+          </div>
+          <div class="row justify-content-center col-12 ">
+            <div class="col-12">
+              <label for="email">Email</label>
+              <input type="email" name="email" class="form-control" placeholder="Parent's Email" id="email">
+            </div>
+          </div>
+          <div class="row justify-content-center col-12 mt-2 mb-2">
+            <div class="col-12 col-md-6 col-lg-6">
+              <label for="password">Password</label>
+              <input type="password" name="password" class="form-control" placeholder="Enter a password" id="password">
+            </div>
+            <div class="col-12 col-md-6 col-lg-6"> 
+              <label for="cpassword">Confirm Password</label>
+              <input type="password" name="cpassword" class="form-control" placeholder="Confirm your password" id="cpassword">
+            </div>
+          </div>
+          <div class="row col-12 mt-2 mb-2 justify-content-center">
+            <div class="col-12 col-md-6 col-lg-6">
+              <label for="dob">Date of Birth</label>
+              <input type="date" name="dob" class="form-control" id="dob">
+            </div>
+          </div>
+          <div class="row col-12">
+            <div class="col-12 col-md-6 col-lg-6">
+              <input type="checkbox" id="permit"  class="form-check-input">
+              <label for="permit">I have permission to sign up</label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-warning form-control text-white fw-bold p-2 mb-2">Create My Account</button>
+
+          <hr>
+
+          <div class="text-center">
+            <p class="text-muted">Already have an account? <a href="./login.html" class="text-success fw-bold">Login</a></p>
+          </div>
+        </form>        
+      </div>
+      <div class="col-lg-6 rounded col-sm-10 h-100 d-none d-lg-flex img-container" height="100%" style="min-height: 700px;">
+        <img src="./src/IMG/home-hero.png" alt="hero image" class="img-fluid w-100  h-100">
+      </div>
     </div>
   </div>
 

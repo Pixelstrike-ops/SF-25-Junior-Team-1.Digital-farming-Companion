@@ -17,6 +17,10 @@ document.addEventListener('DOMContentLoaded', function() {
         oldMes.remove();
     };
 
+    let hasError = false;
+    event.preventDefault();
+    console.log(fName, lName, email, password, cPassword, dob);
+
     if(!fName || !lName || !email || !password || !cPassword || !dob){
        let p =  document.createElement('p')
        p.innerText = "Please fill in all fields"
@@ -25,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
        form.appendChild(p);
        console.log(p);
        event.preventDefault();
+       hasError = true;
     };
     if(password !== cPassword){
         let p =  document.createElement('p')
@@ -34,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
         form.appendChild(p);
         console.log(p);
         event.preventDefault();
+        hasError = true;
     };
     if (password.length < 8){
         let p =  document.createElement('p')
@@ -42,6 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
         p.style.color = "red";
         form.appendChild(p);
         event.preventDefault();
+        hasError = true;
     };
     if (!/\S+@\S+\.\S+/.test(email)){
         let p =  document.createElement('p')
@@ -51,6 +58,14 @@ document.addEventListener('DOMContentLoaded', function() {
         form.appendChild(p);
         console.log(p);
         event.preventDefault();
+        hasError = true;
     }
+    if(!hasError){
+        window.location.href = './Dashboard/dashboard.html';
+        return true;
+    }
+
+
+    return false;
   });
 });

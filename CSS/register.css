@@ -11,32 +11,16 @@ body{
         rgba(124, 232, 124, 0.905),     /* soft green */
         hsla(60, 58%, 71%, 0.756)    /* light yellow */);
 }
-.f-container{
-    justify-self: center;
-    height: 70vh;
-    max-width: 70pc;
-}
-.img{
-    width: 150%;
-    height: 100%;
-}
-.flex-row {
-    display: flex;
-    align-items: stretch;
+
+
+.form-container, .img-container {
     height: 100%;
 }
 
-.form-container, .image-container {
-    flex: 1 1 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-}
 
-.form-container form {
+.img-container img{
+    object-fit: cover;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    width: 100%;
+    border-radius: 10px;
 }
