@@ -20,3 +20,23 @@ body{
     width: 150%;
     height: 100%;
 }
+.flex-row {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+}
+
+.form-container, .image-container {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.form-container form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
