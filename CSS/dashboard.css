@@ -1,6 +1,6 @@
 @media  screen and (max-width: 300px) {
-.offcanvas-3cols{
-    width: 35vw !important;
+.offcanvas{
+    width: 35px !important;
 
 }
     
@@ -10,11 +10,12 @@
     position: absolute;
     top: 0px;
     left: 0px;
-    z-index: 0;
-    width: 200px;
-    height: 100%;
+    width: 80px;
+    height: 100vh;
     background-color: #198754 !important;
     text-align: center;
+    max-width: 100px;
+    z-index: -1;
 }
 .sidebar-div> button {
     position: relative;
@@ -24,4 +25,15 @@
     top: 0;
     text-align: center;
     background-color: #c3ccc869;
+}
+
+.sidebar-div> button:hover {
+    background-color: #c3ccc869;
+    color: #ffffff;
+}
+.but-div {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
 }

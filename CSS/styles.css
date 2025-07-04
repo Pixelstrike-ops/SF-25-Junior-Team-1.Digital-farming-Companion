@@ -32,6 +32,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 90vh;
+    align-content: center;
 }
 .hero > div{
     background-image: 
@@ -51,6 +52,7 @@
     animation-fill-mode: forwards;
     animation-direction: normal;
     animation-play-state: running;
+    align-self: center;
 }
 @keyframes herotext {
     from{
@@ -186,3 +188,21 @@ a.activea {
     flex-grow: 1;          
     text-align: center;   
  }
+
+@media screen and (max-height: 1200px) {
+    .hero{
+        height: 70vh;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .hero{
+        height: 90vh;
+    }
+    .hero-text{
+        font-size: 1.5rem;
+    }
+    .hero-but{
+        font-size: 1rem;
+    }
+}
